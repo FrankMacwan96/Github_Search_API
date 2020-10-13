@@ -1,6 +1,6 @@
 # Github_Search_API
 
-A simple NodeJS application for implementing Github Search API for searching top 10 users in a specific location, and storing each unique users in a database.
+A simple NodeJS application for implementing Github Search API for searching top 10 users in a specific location, and storing each unique user in a database.
 
 The github api used, is authenticated by an oAuth token, so the rate limit is increased. 
 
