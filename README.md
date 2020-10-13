@@ -4,7 +4,7 @@ A simple NodeJS application for implementing Github Search API for searching top
 
 The github api used, is authenticated by an oAuth token, so the rate limit is increased. 
 
-**Use Case:**
+<u>**Use Case:**<u>
 
 **Step 1:** Clone the repository.
 
