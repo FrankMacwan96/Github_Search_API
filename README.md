@@ -6,12 +6,12 @@ The github api used, is authenticated by an oAuth token, so the rate limit is in
 
 **Use Case:**
 
-Step 1: Clone the repository.
+**Step 1:** Clone the repository.
 
-Step 2: Go to the repostiory folder and install node modules by 'npm install'.
+**Step 2:** Go to the repostiory folder and install node modules by 'npm install'.
 
-Step 3: Start the server by 'npm start'
+**Step 3:** Start the server by 'npm start'
 
-Step 4: in browser or postman use link : localhost:8000/api/search?location=toronto  , 
-        where in location query parameter, you specify a country, city or province/state. 
+**Step 4:** in browser or postman use link : localhost:8000/api/search?location=toronto  , 
+                where in location query parameter, you specify a country, city or province/state. 
 
