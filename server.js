@@ -7,15 +7,16 @@ const secureEnv = require('secure-env');
 global.env = secureEnv({secret:'Frank'});
 
 app.use(parser.json());
-app.use('/',search);
+app.use('/api/search',search);
 
 const db = global.env.DB_CONN;
 const port = global.env.PORT || 3000;
 
 mongoose.connect(db,
     {
-        useNewURLParser:true
+        useNewURLParser:true,
+        useUnifiedTopology: true
     }
 );
 
-app.listen(port);
+app.listen(port, () =>  console.log(`Listening on port: ${port}`));

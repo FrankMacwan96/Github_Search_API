@@ -22,11 +22,6 @@ router.get('/', async(req, res) => {
     var final = [];
         
     for (var key in result.data.items) {
-        // final[key] = {
-        //     "login"     : result.data.items[key]["login"],
-        //     "html_url"  : result.data.items[key]["html_url"],
-        //     "location"  : location
-        // };
 
         let data = new GitHubUser({
                 login       : result.data.items[key]["login"],
@@ -38,11 +33,11 @@ router.get('/', async(req, res) => {
             await data.save(); 
             final.push(data);   
         } catch(e) { 
-            console.log(e) 
+            console.log(e)
         }
     }
 
-    if(final.length == 0) { res.send('The users of this city already exist in the database, please try a different city'); }
+    if(final.length == 0) { res.send('The top 10 users of this city already exist in the database, please try a different city'); }
     res.send(final);
 });
 
